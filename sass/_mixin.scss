@@ -1,0 +1,12 @@
+@mixin flexprop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin commoncode($par1, $pera2) {
+  color: #223f3e;
+  font-size: 2rem + 2rem;
+  letter-spacing: $par1;
+  text-transform: $pera2;
+}

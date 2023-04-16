@@ -1,0 +1,38 @@
+@import "_mixin";
+@import "_var";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 1. Operator
+// 2. variables
+// 3. nesting
+// 4. mixin
+// 5.perameter
+// 6.partials
+
+.main_header {
+  @include flexprop;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $bg-color;
+  h1 {
+    @include commoncode(0.8rem, uppercase);
+    &:hover {
+      color: white;
+    }
+    &::after {
+      content: " Chapter";
+    }
+  }
+
+  p {
+    @include commoncode(0.3rem, capitalize);
+    &:hover {
+      color: white;
+    }
+  }
+}
